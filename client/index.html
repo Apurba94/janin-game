@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#090d1e" />
+    <meta name="description" content="Janin is a fast, lightweight online multiplayer relay arena." />
+    <title>Janin — Orbit Relay</title>
+  </head>
+  <body>
+    <main id="gameShell" class="game-shell" data-mode="practice" aria-label="Janin Orbit Relay multiplayer arena">
+      <canvas id="arenaCanvas" class="arena-canvas" aria-label="Janin game arena"></canvas>
+      <header class="telemetry" aria-label="Room telemetry">
+        <section class="brand-block"><img id="brandLogo" alt="Janin signal mark" /><div><small>ORBIT RELAY</small><strong>JANIN</strong></div></section>
+        <section class="time-block"><span class="stat-label">ROUND</span><strong id="clockValue">1:30</strong></section>
+        <section class="score-block"><span class="stat-label">YOUR SIGNAL</span><strong id="scoreValue">00</strong></section>
+      </header>
+      <div class="status-line"><span id="statusChip" class="status-chip" data-kind="practice">PRACTICE READY</span><span class="leader-line">LEAD <b id="leaderValue">YOU</b> · <span id="playerCount">4 LINKS</span></span></div>
+      <button id="roomButton" class="room-toggle" type="button">ROOM · <span id="roomValue">PRACTICE</span></button>
+      <aside id="roomCard" class="room-card" hidden aria-label="Join a Janin room">
+        <div class="room-card__header"><h1>RELAY LINK</h1><button id="closeRoomButton" class="icon-button" type="button" aria-label="Close room panel">×</button></div>
+        <p>Join a room with a self-hosted Janin server, or practice the same arena with local rival craft.</p>
+        <div class="room-form">
+          <label>CALL SIGN<input id="nameInput" value="YOU" maxlength="14" autocomplete="nickname" /></label>
+          <label>ROOM CODE<input id="roomInput" value="JANIN" maxlength="6" autocomplete="off" /></label>
+          <label>SERVER URL<input id="serverInput" placeholder="wss://your-server.example" inputmode="url" autocomplete="url" /></label>
+        </div>
+        <div class="room-actions"><button id="practiceButton" class="action-button action-button--quiet" type="button">PRACTICE</button><button id="connectButton" class="action-button" type="button">JOIN LIVE ROOM</button></div>
+        <p class="room-hint">The server URL is saved only on this device. Use HTTPS/WSS for real online rooms.</p>
+      </aside>
+      <div class="bottom-status">MOVE · <b>PAD / WASD</b> &nbsp; DASH · <b>SPACE</b></div>
+      <div class="control-cluster" aria-label="Touch controls"><div id="movePad" class="move-pad" role="application" aria-label="Movement pad"><i class="move-stick"></i><small>MOVE</small></div><button id="dashButton" class="dash-button is-ready" type="button">DASH</button></div>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

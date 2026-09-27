@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Janin</string>
+    <string name="title_activity_main">Janin</string>
+    <string name="package_name">space.janin.orbitrelay</string>
+    <string name="custom_url_scheme">space.janin.orbitrelay</string>
+</resources>
