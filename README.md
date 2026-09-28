@@ -81,3 +81,10 @@ Clients send only steering intent and dash requests at a capped cadence. The ser
 ## Credits
 
 Created by **Janin A Apurba**. Released under the [MIT License](LICENSE).
+
+## Follow Janin on YouTube
+
+If this project helped you, please follow and subscribe:
+
+- **Study with Janin**: [youtube.com/@studywithjanin](https://www.youtube.com/@studywithjanin)
+- **Pomodoro Study with Janin**: [youtube.com/@pomodorostudywithjanin3326](https://www.youtube.com/@pomodorostudywithjanin3326)
